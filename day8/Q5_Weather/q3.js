@@ -1,0 +1,3 @@
+setTimeout(() => {
+  console.log('Hello, JavaScript!');
+}, 2000);

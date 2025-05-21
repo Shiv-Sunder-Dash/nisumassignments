@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+.styled-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.styled-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #0072ff, #005bb5);
+}

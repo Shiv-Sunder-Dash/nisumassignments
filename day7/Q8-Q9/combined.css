@@ -1,0 +1,27 @@
+p {
+  color: red;
+}
+
+#main p {
+  color: blue;
+}
+
+div p.intro {
+  color: green;
+}
+
+.hover-btn {
+  padding: 12px 24px;
+  background-color: #2196f3;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hover-btn:hover {
+  transform: scale(1.1);
+  background-color: #1976d2;
+}
