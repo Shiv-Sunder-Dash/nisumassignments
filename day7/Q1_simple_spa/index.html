@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple SPA</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<nav>
+<a href="#home" onclick="showSection('home')">Home</a>
+<a href="#about" onclick="showSection('about')">About</a>
+<a href="#contact" onclick="showSection('contact')">Contact</a>
+</nav>
+</header>
+<main>
+<section id="home" class="visible">
+<h1>Shiv Sunder Dash</h1>
+<h3>Student | Developer | Learner</h3>
+<p>Welcome to my SPA. I'm passionate about coding, design, and technology.</p>
+<ul>
+<ul>
+<li>Languages: Java, Python, JavaScript</li>
+<li>Skills: Web Dev, Networking, AI</li>
+<li>Currently exploring: HTML/CSS, Servlets, Git</li>
+</ul>
+</ul>
+</section>
+
+<section id="about">
+<h1>About Me</h1>
+<p>I'm a student exploring web development, data science, and backend engineering. I love learning new things and building cool projects.</p>
+<ol>
+<li>College: KIIT University</li>
+<li>Tools I use: GitHub, IntelliJ, VS Code</li>
+<li>Interests: Cloud, Linux, AI</li>
+</ol>
+</section>
+
+<section id="contact">
+<h1>Contact</h1>
+<p>GitHub: <a href="https://github.com/Shiv-Sunder-Dash" target="_blank">Shiv-Sunder-Dash</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/shiv-sunder-dash-426735355" target="_blank">shiv-sunder-dash</a></p>
+<form>
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name"><br>
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email"><br>
+<label for="msg">Message:</label><br>
+<textarea id="msg" name="msg"></textarea><br>
+<input type="submit" value="Send">
+</form>
+</section>
+</main>
+<footer></footer>
+<script src="script.js"></script>
+</footer>
+</body>
+</html>
+
