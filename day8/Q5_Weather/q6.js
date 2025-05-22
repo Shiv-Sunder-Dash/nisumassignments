@@ -6,14 +6,13 @@ async function runTasksSequentially(tasks) {
       const result = await task();
       results.push(result);
     } catch (error) {
-      console.error(error); // Log the rejected reason
+      console.error(error);
     }
   }
 
   return results;
 }
 
-// Example usage:
 const tasks = [
   () => Promise.resolve('Task 1 done'),
   () => Promise.reject('Task 2 failed'),
@@ -21,7 +20,3 @@ const tasks = [
 ];
 
 runTasksSequentially(tasks).then(console.log);
-
-// Expected output:
-// Task 2 failed
-// ['Task 1 done', 'Task 3 done']

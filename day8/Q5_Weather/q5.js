@@ -3,4 +3,4 @@ const evenSquares = numbers
   .filter(num => num % 2 === 0)
   .map(num => num * num);
 
-console.log(evenSquares); // Output: [4, 16, 36, 64]
+console.log(evenSquares);
