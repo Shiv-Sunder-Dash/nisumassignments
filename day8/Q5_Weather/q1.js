@@ -1,7 +1,6 @@
 const countryInput = document.getElementById('countryInput');
 const weatherDetails = document.getElementById('weatherDetails');
 
-// Static data for demo
 const weatherData = {
   India: { city: 'Bhubaneswar', temp: '31°C', condition: 'Sunny' },
   USA: { city: 'New York', temp: '16°C', condition: 'Cloudy' },
