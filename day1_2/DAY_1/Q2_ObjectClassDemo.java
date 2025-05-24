@@ -5,8 +5,8 @@ public class Q2_ObjectClassDemo {
         Person person2 = new Person("SUSMITA", 44);
         Person person3 = person1;
         System.out.println("toString(): " + person1.toString());
-        System.out.println("person1.equals(person2): " + person1.equals(person2)); // should be true (based on content)
-        System.out.println("person1.equals(person3): " + person1.equals(person3)); // should be true (same reference)
+        System.out.println("person1.equals(person2): " + person1.equals(person2));
+        System.out.println("person1.equals(person3): " + person1.equals(person3));
         System.out.println("person1.hashCode(): " + person1.hashCode());
         System.out.println("person2.hashCode(): " + person2.hashCode());
     }
@@ -14,7 +14,6 @@ public class Q2_ObjectClassDemo {
 class Person {
     String name;
     int age;
-
     public Person(String name, int age) {
         this.name = name;
         this.age = age;

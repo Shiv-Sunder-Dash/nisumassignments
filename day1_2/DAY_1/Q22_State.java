@@ -4,22 +4,15 @@ class Q22_State {
         System.out.println("This is a generic state.");
     }
 }
-
 class California extends Q22_State {
     public void showFamousPlace() {
         System.out.println("Famous place: Golden Gate Bridge.");
     }
 }
-
- class SubclassMethodAccessDemo {
+class SubclassMethodAccessDemo {
     public static void main(String[] args) {
-        Q22_State state = new California();  // Superclass reference to subclass object
-
-        state.showInfo();  // Allowed: method in State
-
-        // state.showFamousPlace();  // Compile-time error: method not in State
-
-        // Downcasting to access subclass method
+        Q22_State state = new California();
+        state.showInfo();
         if (state instanceof California) {
             ((California) state).showFamousPlace();
         }

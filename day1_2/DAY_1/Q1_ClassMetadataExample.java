@@ -21,7 +21,6 @@ class SampleClass {
     public void display() {
         System.out.println("Display method");
     }
-
     private int add(int a, int b) {
         return a + b;
     }
